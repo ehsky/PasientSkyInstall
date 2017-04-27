@@ -5,6 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PasientSky.Installer"
         mc:Ignorable="d"
-        Title="PasientSky" Height="350" Width="525">
-    <Grid/>
+        Title="PasientSky" Height="350" Width="525" FontFamily="Lato" Background="White" BorderBrush="#FFD16262" Foreground="#FFCD2A2A">
+    <Grid>
+        <TabControl HorizontalAlignment="Left" Height="283" VerticalAlignment="Top" Width="517" Background="White" BorderBrush="#FF130E0E">
+            <TabItem Header="TabItem">
+                <Grid Background="#FFFAFAFA"/>
+            </TabItem>
+            <TabItem Header="TabItem">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+        </TabControl>
+    </Grid>
 </Window>
