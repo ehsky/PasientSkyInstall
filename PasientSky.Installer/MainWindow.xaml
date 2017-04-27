@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PasientSky.Installer"
         mc:Ignorable="d"
-        Title="PasientSky" Height="350" Width="525" FontFamily="Lato" Background="White" BorderBrush="#FFD16262" Foreground="#FFCD2A2A">
-    <Grid>
-        <TabControl HorizontalAlignment="Left" Height="283" VerticalAlignment="Top" Width="517" Background="White" BorderBrush="#FF130E0E">
-            <TabItem Header="TabItem">
-                <Grid Background="#FFFAFAFA"/>
+        Title="PasientSky" Height="350" Width="493" FontFamily="Lato" Background="#FF54C5D0" Foreground="{x:Null}">
+    <Grid Background="#FF54C5D0" Margin="0,0,79,0">
+        <TabControl Background="White" BorderBrush="{x:Null}" Foreground="{x:Null}" OpacityMask="White" SelectionChanged="TabControl_SelectionChanged" Margin="0,0,-79,0">
+            <TabItem Header="PasientSky test" Background="#FF54C5D0" Foreground="#FF14838E" BorderBrush="#FF54C5D0" OpacityMask="#FF54C5D0" Margin="-2,-2,0,0" Padding="10,8">
+                <Grid Background="White"/>
             </TabItem>
-            <TabItem Header="TabItem">
-                <Grid Background="#FFE5E5E5"/>
+            <TabItem Header="Sjekk .NET" BorderBrush="#FF54C5D0" Background="#FF54C5D0" Foreground="#FF14838E" Padding="10,8" Margin="0,-2,-2,0">
+                <Grid Background="White" Margin="0,0,0,-2"/>
             </TabItem>
         </TabControl>
     </Grid>
