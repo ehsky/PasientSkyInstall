@@ -1,2 +1,0 @@
-# PasientSkyInstall
-Installasjons program
