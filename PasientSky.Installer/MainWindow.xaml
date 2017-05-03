@@ -21,10 +21,10 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <GroupBox Header="AC" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="86" Grid.Column="2" Grid.Row="2">
-                        <Button Content="Deaktivere skjermens &#xA;hvilemodus" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ACdeactivate" FontSize="14"/>
+                        <Button Content="Deaktivere skjermens &#xA;hvilemodus" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ACdeactivate" Foreground="White" BorderBrush="#FF54C5D0" Background="#FF54C5D0" BorderThickness="10,5"/>
                     </GroupBox>
-                    <GroupBox Header="Skjermsparer" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="86" Grid.Column="1" Grid.Row="2">
-                        <Button Content="Deaktivere &#xD;&#xA;Skjermsparer" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ScreenDeactivate" FontSize="14"/>
+                    <GroupBox Header="Skjermsparer" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="86" Grid.Column="1" Grid.Row="2" BorderThickness="1">
+                        <Button Content="Deaktivere &#xD;&#xA;skjermsparer" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ScreenDeactivate" Foreground="White" Background="#FF54C5D0" BorderBrush="#FF54C5D0" BorderThickness="10,5" OpacityMask="#FF54C5D0"/>
                     </GroupBox>
                 </Grid>
             </TabItem>
