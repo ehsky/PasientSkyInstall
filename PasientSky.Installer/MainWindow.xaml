@@ -47,6 +47,7 @@
                     <Label x:Name="lblNET46" Content=".NET Framework 4.6.0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray" Grid.Row="2"/>
                     <Label x:Name="lblNET47" Content=".NET Framework 4.7.0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray" Grid.Row="2" Grid.Column="1"/>
                     <Button Content="Check" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75"  Grid.Row="3" Grid.ColumnSpan="2" Click="DotNet_Check"/>
+                    <Button Content="Install .NET 4.6" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="3" Grid.Column="1" Click="DotNetInstall4" FontSize="10" FontStyle="Italic"/>
                 </Grid>
             </TabItem>
         </TabControl>
