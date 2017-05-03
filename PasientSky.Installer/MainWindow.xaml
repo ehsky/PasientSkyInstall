@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="PasientSky" Height="350" Width="493" FontFamily="Lato" Background="#FF54C5D0" Foreground="{x:Null}">
     <Grid Background="#FF54C5D0" Margin="0,0,79,0">
-        <TabControl Background="White" BorderBrush="{x:Null}" Foreground="{x:Null}" OpacityMask="White" SelectionChanged="TabControl_SelectionChanged" Margin="0,0,-79,0">
+        <TabControl Background="White" BorderBrush="{x:Null}" Foreground="{x:Null}" OpacityMask="White" Margin="0,0,-79,0">
             <TabItem Header="PasientSky test" Background="#FF54C5D0" Foreground="#FF14838E" BorderBrush="#FF54C5D0" OpacityMask="#FF54C5D0" Margin="-2,-2,0,0" Padding="10,8">
                 <Grid Background="White"/>
             </TabItem>
@@ -23,13 +23,13 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
-                    <Label Content=".NET Framework 2.0 SP2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray"/>
-                    <Label Content=".NET Framework 3.0 SP2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray" Grid.Column="1"/>
-                    <Label Content=".NET Framework 3.5 SP1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray" Grid.Row="1"/>
-                    <Label Content=".NET Framework 4.5.1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray" Grid.Row="1" Grid.Column="1"/>
-                    <Label Content=".NET Framework 4.5.6" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray" Grid.Row="2"/>
-                    <Label Content=".NET Framework 4.6.0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray" Grid.Row="2" Grid.Column="1"/>
-                    <Button Content="Check" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75"  Grid.Row="3" Grid.ColumnSpan="2" Click="dotNet_Check"/>
+                    <Label x:Name="lblNET20" Content=".NET Framework 2.0 SP2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray"/>
+                    <Label x:Name="lblNET30" Content=".NET Framework 3.0 SP2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray" Grid.Column="1"/>
+                    <Label x:Name="lblNET35" Content=".NET Framework 3.5 SP1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray" Grid.Row="1"/>
+                    <Label x:Name="lblNET45" Content=".NET Framework 4.5.x" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray" Grid.Row="1" Grid.Column="1"/>
+                    <Label x:Name="lblNET46" Content=".NET Framework 4.6.0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray" Grid.Row="2"/>
+                    <Label x:Name="lblNET47" Content=".NET Framework 4.7.0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray" Grid.Row="2" Grid.Column="1"/>
+                    <Button Content="Check" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75"  Grid.Row="3" Grid.ColumnSpan="2" Click="DotNet_Check"/>
                 </Grid>
             </TabItem>
         </TabControl>
