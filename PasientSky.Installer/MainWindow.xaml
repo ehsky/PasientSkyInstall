@@ -21,7 +21,10 @@
                         <ColumnDefinition Width="*"/>
                     </Grid.ColumnDefinitions>
                     <GroupBox Header="AC" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="86" Grid.Column="2" Grid.Row="2">
-                        <Button Content="Deaktivere skjermens &#xA;hvilemodus" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ACdeactivate"/>
+                        <Button Content="Deaktivere skjermens &#xA;hvilemodus" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ACdeactivate" FontSize="14"/>
+                    </GroupBox>
+                    <GroupBox Header="Skjermsparer" HorizontalAlignment="Center" VerticalAlignment="Center" Width="150" Height="86" Grid.Column="1" Grid.Row="2">
+                        <Button Content="Deaktivere &#xD;&#xA;Skjermsparer" HorizontalAlignment="Center" VerticalAlignment="Center" Click="ScreenDeactivate" FontSize="14"/>
                     </GroupBox>
                 </Grid>
             </TabItem>

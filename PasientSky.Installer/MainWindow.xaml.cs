@@ -125,5 +125,10 @@ namespace PasientSky.Installer
             PStext = "powercfg -x -monitor-timeout-ac 0;powercfg -x -standby-timeout-ac 0";
             System.Diagnostics.Process.Start("powershell.exe", PStext);
         }
+
+        private void ScreenDeactivate(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
