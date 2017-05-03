@@ -118,5 +118,12 @@ namespace PasientSky.Installer
                 }
             }
         }
+
+        private void ACdeactivate(object sender, RoutedEventArgs e)
+        {
+            string PStext;
+            PStext = "powercfg -x -monitor-timeout-ac 0;powercfg -x -standby-timeout-ac 0";
+            System.Diagnostics.Process.Start("powershell.exe", PStext);
+        }
     }
 }
