@@ -12,7 +12,25 @@
                 <Grid Background="White"/>
             </TabItem>
             <TabItem Header="Sjekk .NET" BorderBrush="#FF54C5D0" Background="#FF54C5D0" Foreground="#FF14838E" Padding="10,8" Margin="0,-2,-2,0">
-                <Grid Background="White" Margin="0,0,0,-2"/>
+                <Grid Background="White">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content=".NET Framework 2.0 SP2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray"/>
+                    <Label Content=".NET Framework 3.0 SP2" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray" Grid.Column="1"/>
+                    <Label Content=".NET Framework 3.5 SP1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray" Grid.Row="1"/>
+                    <Label Content=".NET Framework 4.5.1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray" Grid.Row="1" Grid.Column="1"/>
+                    <Label Content=".NET Framework 4.5.6" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray" Grid.Row="2"/>
+                    <Label Content=".NET Framework 4.6.0" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" Foreground="Gray" Grid.Row="2" Grid.Column="1"/>
+                    <Button Content="Check" HorizontalAlignment="Center" VerticalAlignment="Center" Width="75"  Grid.Row="3" Grid.ColumnSpan="2" Click="dotNet_Check"/>
+                </Grid>
             </TabItem>
         </TabControl>
     </Grid>

@@ -29,5 +29,10 @@ namespace PasientSky.Installer
         {
 
         }
+
+        private void dotNet_Check(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
